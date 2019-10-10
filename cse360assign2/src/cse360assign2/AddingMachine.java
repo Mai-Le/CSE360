@@ -25,15 +25,15 @@ public class AddingMachine {			//class AddingMachine
 
 	private int total;			//total variable
 	
-	private String make;		//create a string in order to get get the right operator
+	private String make;			//create a string in order to get get the right operator
 	
 	public AddingMachine () {
-		total = 0;  					// not needed - included for clarity
-		make = "" + total;				//start from the first value of total variable
+		total = 0;  			// not needed - included for clarity
+		make = "" + total;		//start from the first value of total variable
 	}
 	
-	public int getTotal () {			//get the value of the total variable
-		return total;				//return total variable
+	public int getTotal () {		//get the value of the total variable
+		return total;			//return total variable
 	}
 	
 	public void add (int value) {		//method for addition
@@ -46,11 +46,11 @@ public class AddingMachine {			//class AddingMachine
 		make = make + " - " + value;	//create a string expresses for this event
 	}
 		
-	public String toString () {			//string value of all the events
-		return make;				//return make string after all of the events
+	public String toString () {		//string value of all the events
+		return make;			//return make string after all of the events
 	}
 
-	public void clear() {				//clear the current value of string make
-		make = "\0";				//string back to first initial
+	public void clear() {			//clear the current value of string make
+		make = "\0";			//string back to first initial
 	}
 }
