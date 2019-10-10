@@ -4,27 +4,32 @@ public class AddingMachine {
 
 	private int total;
 	
+	private String make;
+	
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+		make = "" + total;
 	}
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	public void add (int value) {
-		
+		total = total + value;
+		make = make + " + " + value;
 	}
 	
 	public void subtract (int value) {
-		
+		total = total - value;
+		make = make + " - " + value;
 	}
 		
 	public String toString () {
-		return "";
+		return make;
 	}
 
 	public void clear() {
-	
+		make = "\0";
 	}
 }
