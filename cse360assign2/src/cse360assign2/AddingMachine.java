@@ -23,9 +23,9 @@ package cse360assign2;
 
 public class AddingMachine {			//class AddingMachine
 
-	private int total;					//total variable
+	private int total;			//total variable
 	
-	private String make;				//create a string in order to get get the right operator
+	private String make;		//create a string in order to get get the right operator
 	
 	public AddingMachine () {
 		total = 0;  					// not needed - included for clarity
@@ -33,24 +33,24 @@ public class AddingMachine {			//class AddingMachine
 	}
 	
 	public int getTotal () {			//get the value of the total variable
-		return total;					//return total variable
+		return total;				//return total variable
 	}
 	
 	public void add (int value) {		//method for addition
-		total = total + value;			//add the parameter to the total variable
+		total = total + value;		//add the parameter to the total variable
 		make = make + " + " + value;	//create a string expresses for this event
 	}	
 	
 	public void subtract (int value) {	//method for subtraction
-		total = total - value;			//subtract the parameter from the total variable
+		total = total - value;		//subtract the parameter from the total variable
 		make = make + " - " + value;	//create a string expresses for this event
 	}
 		
 	public String toString () {			//string value of all the events
-		return make;					//return make string after all of the events
+		return make;				//return make string after all of the events
 	}
 
 	public void clear() {				//clear the current value of string make
-		make = "\0";					//string back to first initial
+		make = "\0";				//string back to first initial
 	}
 }
