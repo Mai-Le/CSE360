@@ -21,7 +21,7 @@
 
 package cse360assign2;
 
-public class AddingMachine {		//class AddingMachine
+public class AddingMachine {			//class AddingMachine
 
 	private int total;			//total variable
 	
@@ -52,6 +52,6 @@ public class AddingMachine {		//class AddingMachine
 
 	public void clear() {			//clear the current value of string make
 		make = "\0";			//string back to first initial
-		total = 0 ;				//update total back to initial
+		total = 0 ;			//update total back to initial
 	}
 }
