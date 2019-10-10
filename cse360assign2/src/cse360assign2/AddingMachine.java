@@ -21,23 +21,23 @@
 
 package cse360assign2;
 
-public class AddingMachine {	//class AddingMachine
+public class AddingMachine {			//class AddingMachine
 
-	private int total;			//total variable
+	private int total;					//total variable
 	
-	private String make;		//create a string in order to get get the right operator
+	private String make;				//create a string in order to get get the right operator
 	
 	public AddingMachine () {
-		total = 0;  // not needed - included for clarity
-		make = "" + total;		//start from the first value of total variable
+		total = 0;  					// not needed - included for clarity
+		make = "" + total;				//start from the first value of total variable
 	}
 	
-	public int getTotal () {	//get the value of the total variable
-		return total;			//return total variable
+	public int getTotal () {			//get the value of the total variable
+		return total;					//return total variable
 	}
 	
-	public void add (int value) {	//method for addition
-		total = total + value;		//add the parameter to the total variable
+	public void add (int value) {		//method for addition
+		total = total + value;			//add the parameter to the total variable
 		make = make + " + " + value;	//create a string expresses for this event
 	}	
 	
